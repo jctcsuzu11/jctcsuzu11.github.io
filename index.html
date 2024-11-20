@@ -38,5 +38,27 @@
 　　<link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
 　　<link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
 　　<link rel="stylesheet" href="file:///C:/Users/user/Desktop/shared_vars.css">
-     
+    <script>let selectItem = "";
+selectItem = localStorage.getItem('sumikawa');
+if(selectItem){
+  $('span').text(selectItem);
+}
+
+
+$('.save').click(function() {
+  selectItem = $('input:radio[name="sumikawa"]:checked').val();
+  localStorage.setItem('sumikawa', selectItem);
+});
+
+$('.display').click(function() {
+  selectItem = localStorage.getItem('sumikawa');
+  $("span").text(selectItem);
+});
+
+$('.delete').click(function() {
+  localStorage.removeItem('sumikawa');
+  $("span").text("未選択");
+});
+    
+</script>
 </body></html>
