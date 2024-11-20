@@ -23,40 +23,7 @@
     </style>
   </head>
   <body><div class="clsm3gwog0d"><style scoped="">div.clsm3gwog0d{margin:5px;}div.clsm3gwog0d div.tbl table{width:100%;}div.clsm3gwog0d div.tbl th.nowrap,div.clsm3gwog0d div.tbl td.nowrap{white-space:nowrap;}div.clsm3gwog0d{padding:10px;}div.clsm3gwog0d div.tbl th,div.clsm3gwog0d div.tbl td{border:5px double #000000;padding:16px;}div.clsm3gwog0d div.tbl th,div.clsm3gwog0d div.tbl td{background-color:transparent;}div.clsm3gwog0d{background-color:transparent;}div.clsm3gwog0d div.tbl table{border-collapse:collapse;border-spacing:0;table-layout:fixed;}div.clsm3gwog0d div.tbl,div.clsm3gwog0d div.tbl a{color:#000000;}div.clsm3gwog0d div.tbl{font-size:22px;text-align:center;}div.clsm3gwog0d div.tbl th,div.clsm3gwog0d div.tbl th a{color:;}div.clsm3gwog0d div.tbl th{font-weight:bold;text-align:center;}</style><div class="tbl"><table><tbody><tr><td style="background-color:rgba(0,0,0,0.5);color:#ffffff"></td><th style="background-color:#fb878e;color:#000000;text-align:center;font-size:1.3em;font-weight:bold">出勤</th><td style="background-color:#589dc0;color:#000000;text-align:center;font-size:1.3em;font-weight:bold">退勤</td></tr><tr><td>澄川</td><td><input type="radio" id="radio1" name="澄川" value="澄川">
-      <label for="radio1"></label></td><td><input type="radio" id="radio1" name="澄川" value="澄川">
-   <script>
-// ラジオボタンの状態を保存する関数
-function saveRadioState() {
-var radios = document.querySelectorAll('input[type="radio"]');
-radios.forEach(function(radio) {
-if (radio.checked) {
-localStorage.setItem('selectedRadio', radio.id);
-}
-});
-}
-
-// ページが読み込まれた時に保存された状態を復元する関数
-function restoreRadioState() {
-var selectedRadioId = localStorage.getItem('selectedRadio');
-if (selectedRadioId) {
-var selectedRadio = document.getElementById(selectedRadioId);
-if (selectedRadio) {
-selectedRadio.checked = true;
-}
-}
-}
-
-// ページが読み込まれた時に状態を復元
-document.addEventListener('DOMContentLoaded', function() {
-restoreRadioState();
-});
-
-// ページがリロードされる時に状態を保存
-window.addEventListener('beforeunload', function() {
-saveRadioState();
-});
-</script>   
-          
+      <label for="radio1"></label></td><td><input type="radio" id="radio1" name="澄川" value="澄川">    
       <label for="radio1"></label></td></tr><tr><td>早乙女</td><td><input type="radio" id="radio2" name="早乙女" value="早乙女">
       <label for="contactChoice2"></label></td><td><input type="radio" id="radio2" name="早乙女" value="早乙女">
       <label for="contactChoice2"></label></td></tr><tr><td>高久</td><td><input type="radio" id="radio3" name="高久" value="高久">
