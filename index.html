@@ -35,38 +35,6 @@
       <label for="contactChoice1"></label></td></tr></tbody></table></div></div>
     <iframe id="backgroundImage" src="./出退勤表_files/saved_resource.html"></iframe>
     <ntp-app></ntp-app>
-    <script>
-// ラジオボタンの状態を保存する関数
-function saveRadioState() {
-var radios = document.querySelectorAll('input[type="radio"]');
-radios.forEach(function(radio) {
-if (radio.checked) {
-localStorage.setItem('selectedRadio', radio.id);
-}
-});
-}
-
-// ページが読み込まれた時に保存された状態を復元する関数
-function restoreRadioState() {
-var selectedRadioId = localStorage.getItem('selectedRadio');
-if (selectedRadioId) {
-var selectedRadio = document.getElementById(selectedRadioId);
-if (selectedRadio) {
-selectedRadio.checked = true;
-}
-}
-}
-
-// ページが読み込まれた時に状態を復元
-document.addEventListener('DOMContentLoaded', function() {
-restoreRadioState();
-});
-
-// ページがリロードされる時に状態を保存
-window.addEventListener('beforeunload', function() {
-saveRadioState();
-});
-</script>
     <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
     <link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
     <link rel="stylesheet" href="file:///C:/Users/user/Desktop/shared_vars.css">
