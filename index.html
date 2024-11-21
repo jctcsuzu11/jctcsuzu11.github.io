@@ -39,6 +39,16 @@
 　　<link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
 　　<link rel="stylesheet" href="file:///C:/Users/user/Desktop/shared_vars.css">
     <script>
-
+ar array = [];
+var obj = {
+  'sumikawa': '澄川',
+  'saotome': '早乙女'
+　'takahisa': '高久'
+　'okada': '岡田'
+　'ishikawa': '石川'
+};
+array.push(obj);
+var setjson = JSON.stringify(obj);
+localStorage.setItem('name', setjson);
     </script>
 </body></html>
